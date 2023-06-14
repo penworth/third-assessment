@@ -1,9 +1,10 @@
 import React from 'react'
 
-const Userinput = () => {
+const Userinput = (props) => {
   return (
     <div>
-        <input type="text" className='input' />
+      {/* passing function to change the the h1 */}
+        <input className='border-solid border-2' type="text" onChange= {props.changeHandler}/>
     </div>
   )
 }
